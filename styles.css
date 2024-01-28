@@ -1,60 +1,194 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap');
-
-@font-face {
-    font-family: 'SpiderMan';
-
-    src: url('./fonts/The-Amazing-Spider-Man.ttf') format('embedded-opentype'), /* Internet Explorer */
-         url('./fonts/The-Amazing-Spider-Man.ttf') format('woff'),              /* Pretty Modern Browsers */
-         url('./fonts/The-Amazing-Spider-Man.ttf') format('truetype'),          /* Safari, Android, iOS */
-         url('./fonts/The-Amazing-Spider-Man.ttf') format('svg'),               /* Legacy iOS */
-         url('./fonts/The-Amazing-Spider-Man.ttf') format('woff2');             /* Super Modern Browsers */
-
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* H1, p {
-    font-family: SpiderMan;
-} */
-
-body {
-    font-family: sans-serif;
-}
-
-#account {
-    background-image: url("./imgs/spiderman-hanging-1920x1271.jpg");
-    background-position: 0% 60%;
-
-    /* Full height */
-    height: 100vh;
-    padding: 10%;
-
-    /* Center and scale background image properly */
-    background-attachment: fixed;
+<<<<<<< HEAD
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url('backimage1.avif');
+    background-position: center top;
+    height: auto;
+    width:100%;
     background-repeat: no-repeat;
-    background-size: cover;
-
-    text-align: center;
+    background-size:cover;
+    background-attachment: fixed;
+    padding:0;
+    margin:0;
+    overflow-x: hidden;
 }
 
-#signin-tab {
-    width: 40%;
-    height: 40%;
-    min-width: 100px;
+@font-face{
+    font-family: comicFont;
+    src: url(CRIMFBRG.TTF);
+}
 
+.container1{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    flex-flow:wrap;
+}
+
+.TopBox{
+    background-color: white;
+    display:flex;
+    padding:70px;
+    width:85%;
+    margin:50px;
+}
+
+.TopBox img{
+    border:3px solid black;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.TopBox h2{
+    margin-top:20px;
+    color:black;
+    font-size:2.5vw;
+    font-family:comicFont;
+}
+
+.TopBox p{
+    color:black;
+    letter-spacing:0.2px;
+    line-height:1.2;
+}
+
+.MiddleBox{
+    background-color: white;
+    display:flex;
+    padding:70px;
+    width:85%;
+    margin:50px;
+}
+
+.MiddleBox img{
+    border:3px solid black;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.MiddleBox h2{
+    margin-top:20px;
+    color:black;
+    font-size:2.5vw;
+    font-family:comicFont;
+}
+
+.MiddleBox p{
+    color:black;
+    letter-spacing:0.2px;
+    line-height:1;
+}
+
+.Spiderman img{
+    max-width: 100%;
+    height: auto;
+    align-items:right;
+    position:absolute;
+    right:15px;
+    margin-top: -430px;
+    z-index:-1;
+}
+
+.Introduction{
+    display:flex;
+    max-width: 100%;
+    margin:100px auto;
+    display:inline-block;   
     position: relative;
-    left: 60%;
-    overflow: auto;
-
-    padding: 8%;
     text-align: center;
-
-    background-color: #FAF9F6;
-    border-radius: 5px;
+    color: black;
+}
+ 
+.Introduction img{
+    max-width: 100%;
+    height: auto;
+    position: relative;
 }
 
-#signin-button {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.Introduction img:hover{
+    transform:scale(1.02);
+}
+
+.centered {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-55%, -50%);
+    text-align:center;
+  }
+
+h1{
+    font-size: 2.65vw;
+    font-family:comicFont;
+}
+
+p{
+    font-size: 1.4vw;
+}
+
+.mainContainer{
+    margin-left:50px;
+    margin-right:50px;
+    margin-bottom:30px;
+}
+
+.mainContainer .heading{
+    text-align: center;
+    padding-bottom:15px;
+    color:white;
+    text-shadow:0 5px 10px black(0,0,0,.2);
+    font-size: 50px;
+    font-family: comicFont;
+}
+
+.mainContainer .boxContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+.mainContainer .boxContainer .box{
+    box-shadow: 0 5px 10px black(0,0,0,.2);
+    border-radius:5px;
+    background: white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.mainContainer .boxContainer .box img{
+    height:80px;
+    width:80px;
+}
+
+.mainContainer .boxContainer .box h4{
+    color:#444;
+    font-size: 22px;
+    padding:3px 0;
+}
+
+.mainContainer .boxContainer .box p{
+    color:#444;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.mainContainer .boxContainer .box .btn{
+    margin-top: 10px;
+    display:inline-block;
+    background: #333;
+    color:white;
+    font-size: 17px;
+    border-radius:5px;
+    padding:8px 25px;
+}
+
+.mainContainer .boxContainer .box .btn:hover{
+    letter-spacing: 1px;
+}
+
+.mainContainer .boxContainer .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform:scale(1.02);
 }
